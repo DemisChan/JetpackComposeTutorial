@@ -11,6 +11,9 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.font.FontWeight.Companion.Bold
+import androidx.compose.ui.text.font.FontWeight.Companion.W700
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -40,6 +43,7 @@ fun ArticleTutorialWithText(title: String, description: String, tutorial: String
     Column {
         Text(
             text = title,
+            fontWeight = Bold,
             fontSize = 24.sp,
             modifier = Modifier
                 .padding(16.dp)
